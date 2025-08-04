@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            padding: 10px;
+        }
+        .logo {
+            margin: 20px;
+        }
+
+        .image {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .frank{
+           text-align: center;
+           color: white;
+        }
+        .car:hover{
+            font-weight: bold;
+            border: 1px solid #ccc;
+            transition: .7s;
+        }
+        .animal:hover{
+            font-weight: bold;
+            border: 1px solid #ccc;
+            transition: .7s;
+        }
+        .home:hover{
+            font-weight: bold;
+            border: 1px solid #ccc;
+            transition: .7s;
+        }
+        .house:hover{
+            font-weight: bold;
+            border: 1px solid #ccc;
+            transition: .7s;
+        }
+        /* Media Querry for Mobile*/
+        @media screen and (min-width:0)  and (max-width:700px){
+            .image{
+                grid-template-columns: auto;
+            }
+            .image img{
+                width: 100%;
+            }
+        }
+        /* media query for ipad */
+        @media screen and (min-width: 700px) and (max-width: 1030px) {
+            .image{
+                grid-template-columns: auto auto;
+            }
+            .image img{
+                width: 100%;
+                overflow-x: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="container">
+            <div class="logo">
+                <h2>Animal</h2>
+            </div>
+            <div class="frank">
+                <a href="houses.html"><button class="house"   style="margin: 40px; width: 150px; height: 40px; color: black;">house</button></a>
+            <a href="cars.html"  style="margin: 40px; width: 150px; height: 40px; color: black; border-radius: 8px;"><button class="car"   style="margin: 40px; width: 150px; height: 40px; color: black;">car</button></a>
+            <a href="animals.html"><button class="animal"    style="margin: 40px; width: 150px; height: 40px; color:black; ">animal</button></a>
+            <a href="travels.html"><button class="home"  style="margin: 40px; width: 150px; height: 40px;">Travels</button></a>
+            </div>
+            <div class="image">
+                <img src="https://plus.unsplash.com/premium_photo-1666278379770-440439b08656?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YW5pbWFsc3xlbnwwfHwwfHx8MA%3D%3D"
+                    alt="" width="400px">
+                <img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWFsc3xlbnwwfHwwfHx8MA%3D%3D"
+                    alt="">
+                <img src="https://plus.unsplash.com/premium_photo-1669725687221-6fe12c2da6b1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YW5pbWFsc3xlbnwwfHwwfHx8MA%3D%3D"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YW5pbWFsc3xlbnwwfHwwfHx8MA%3D%3D"
+                    alt="" width="450px">
+                <img src="https://images.unsplash.com/photo-1574870111867-089730e5a72b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YW5pbWFsc3xlbnwwfHwwfHx8MA%3D%3D"
+                    alt="" height="500px" width="400px">
+                <img src="https://images.unsplash.com/photo-1591824438708-ce405f36ba3d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YW5pbWFsc3xlbnwwfHwwfHx8MA%3D%3D"
+                    alt="" height="500px" width="450px">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
